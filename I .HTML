@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Imrana Shabbir Inamdar — Resume</title>
+  <style>
+    :root {
+      --primary: #0f4c81; /* deep blue */
+      --accent: #ff7e5f; /* coral gradient start */
+      --accent2: #feb47b; /* gradient end */
+      --bg: #f4f7fb;
+      --text-dark: #1e293b;
+      --text-light: #64748b;
+      --card-bg: #ffffff;
+      --max-width: 980px;
+      --radius: 14px;
+      --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+
+    .resume {
+      width: 100%;
+      max-width: var(--max-width);
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      animation: fadeIn 0.6s ease;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: white;
+      padding: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .name-block h1 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .name-block .sub {
+      font-weight: 500;
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    .contact {
+      margin-left: auto;
+      font-size: 14px;
+    }
+
+    .contact p {
+      margin: 4px 0;
+    }
+
+    .contact a {
+      color: white;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .contact a:hover {
+      opacity: 0.8;
+    }
+
+    /* Two-column layout */
+    .two-col {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 20px;
+      padding: 28px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 2px solid rgba(15, 76, 129, 0.15); /* subtle blue border */
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+      border-color: var(--primary); /* highlight on hover */
+    }
+
+    .card h2, .card h3 {
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .card h4 {
+      margin-top: 14px;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: var(--text-light);
+    }
+
+    .card ul {
+      margin-top: 8px;
+      padding-left: 20px;
+      color: var(--text-light);
+    }
+
+    .card li {
+      margin-bottom: 6px;
+    }
+
+    /* Footer */
+    .footer-note {
+      background: #e2e8f0;
+      padding: 12px;
+      font-size: 13px;
+      text-align: center;
+      color: var(--text-light);
+      font-style: italic;
+    }
+
+    /* Responsive */
+    @media (max-width: 880px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+      .contact {
+        margin-left: 0;
+      }
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <main class="resume">
+    <header class="header">
+      <div class="name-block">
+        <h1>Imrana Shabbir Inamdar</h1>
+        <p class="sub">Final year — B.Tech in Data Science</p>
+      </div>
+      <div class="contact">
+        <p>📞 <a href="tel:+919359820205">+91-9370990851</a></p>
+        <p>✉️ <a href="mailto:imranakhan1811@gmail.com">imranakhan1811@gmail.com</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/imrana-inamdar0599b4292" target="_blank" rel="noopener">LinkedIn</a></p>
+        <p>🐙 <a href="https://github.com/imranainmadar" target="_blank" rel="noopener">GitHub</a></p>
+        <p>🧠 <a href="https://leetcode.com/u/imrana_18/" target="_blank" rel="noopener">LeetCode</a></p>
+        <p class="education-short">DY Patil College of Engineering — CGPA: 9.03 (Grad 2026)</p>
+      </div>
+    </header>
+
+    <section class="two-col">
+      <aside class="left">
+        <div class="card">
+          <h3>Objective</h3>
+          <p>Motivated and detail-oriented 3rd-year Data Science student with a solid foundation in machine learning, data preprocessing, and Python programming. Seeking internships to apply technical and analytical skills to real projects.</p>
+        </div>
+
+        <div class="card">
+          <h3>Certifications & Training</h3>
+          <ul>
+            <li>AI Machine Learning Engineer — NASSCOM / PMKVY (Aug 2024)</li>
+            <li>480-hour ML training — DYPCET (Grade A, NSQF Level 5)</li>
+            <li>Resume & LinkedIn Seminar — GDSC, DYPCET (2024)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>Languages: Python</li>
+            <li>Databases: MySQL</li>
+            <li>Libraries: Pandas, NumPy, scikit-learn, Matplotlib, Seaborn</li>
+            <li>Tools: Jupyter Notebook, Google Colab, Git & GitHub</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Languages</h3>
+          <ul>
+            <li>English — Full professional</li>
+            <li>Hindi — Native</li>
+            <li>Marathi — Full professional</li>
+            <li>Arabic — Limited working</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="right">
+        <div class="card">
+          <h2>Projects</h2>
+
+          <h4>AI-Powered Voice-Based Chatbot</h4>
+          <p>Built a voice-enabled chatbot interface using Python with a frontend integration; designed UI and handled testing for smooth user interaction.</p>
+
+          <h4>Movie Recommendation System</h4>
+          <p>Developed a content-based recommender. Performed data preprocessing, feature engineering, and model deployment.</p>
+        </div>
+
+        <div class="card">
+          <h2>Education</h2>
+          <p><strong>B.Tech — Data Science</strong><br>DY Patil College of Engineering, Kasba Bawda (Grad: 2026)<br>Current CGPA: 9.03</p>
+
+          <p><strong>Diploma — Electronics & Telecommunication</strong><br>Government Polytechnic, Kolhapur (2016–2018)<br>CGPA: 9.0</p>
+        </div>
+
+        <div class="card">
+          <h2>Soft Skills</h2>
+          <ul>
+            <li>Problem solving & analytical thinking</li>
+            <li>Team collaboration & communication</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer-note">
+      <p>Last updated: August 2025 — Verified by Imrana Shabbir Inamdar</p>
+    </footer>
+  </main>
+</body>
+</html>
